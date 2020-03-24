@@ -33,7 +33,7 @@ Fiaasco Usage
 
 ::
     $ cd roles_basepath
-    $ molecule init template -r chrony --url https://github.com/fiaasco/molecule-cookiecutter.git
+    $ cookiecutter https://github.com/fiaasco/molecule-cookiecutter.git
 
 Usage
 =====
