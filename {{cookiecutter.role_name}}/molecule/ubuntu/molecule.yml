@@ -5,8 +5,10 @@ driver:
   name: docker
 scenario:
   name: ubuntu
-lint:
-  name: yamllint
+lint: |
+  yamllint .
+  ansible-lint molecule/ubuntu/*.yml
+  flake8
 platforms:
   - name: {{ cookiecutter.role_name }}-ubuntu-bionic
     image: ubuntu:bionic
@@ -26,9 +28,5 @@ provisioner:
       timeout: 30
     ssh_connection:
       pipelining: true
-  lint:
-    name: ansible-lint
 verifier:
   name: testinfra
-  lint:
-    name: flake8
