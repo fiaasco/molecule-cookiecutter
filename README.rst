@@ -33,7 +33,7 @@ Fiaasco Usage
 
 ::
     $ cd roles_basepath
-    $ cookiecutter https://github.com/fiaasco/molecule-cookiecutter.git
+    $ cookiecutter gh:ansible/molecule-cookiecutter # now aswer the questions.
 
 Usage
 =====
