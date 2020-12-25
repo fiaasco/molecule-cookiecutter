@@ -32,8 +32,10 @@ Fiaasco Usage
 =============
 
 ::
-    $ cd roles_basepath
-    $ molecule init template -r chrony --url https://github.com/fiaasco/molecule-cookiecutter.git
+    $ cookiecutter https://github.com/fiaasco/molecule-cookiecutter.git
+
+The default location of most molecule resources is shared and debug is enabled.
+Override in moleculy.yml where required.
 
 Usage
 =====
